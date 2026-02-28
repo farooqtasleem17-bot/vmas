@@ -37,7 +37,7 @@ app.get("/sources", async (c) => {
           data = await extractKimcartoon(urlParam, "vhserver");
           break;
         case "vm":
-          data = await extractVidmoly(`https://vidmoly.to/embed-${urlParam}.html`);
+          data = await extractVidmoly(`https://vidmoly.me/embed-${urlParam}.html`);
           break;
         default:
           throw new Error("Invalid host");
